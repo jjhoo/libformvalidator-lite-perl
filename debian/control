@@ -1,0 +1,31 @@
+Source: libformvalidator-lite-perl
+Section: perl
+Priority: optional
+Maintainer: Jani Hakala <jjhakala@gmail.com>
+Build-Depends: debhelper (>= 9),
+ perl
+Build-Depends-Indep: libcgi-pm-perl | perl-modules,
+ libclass-accessor-lite-perl (>= 0.05),
+ libclass-load-perl (>= 0.11),
+ libemail-valid-loose-perl,
+ libemail-valid-perl,
+ libtest-requires-perl (>= 0.05),
+ libtext-testbase-perl,
+ libyaml-perl
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/FormValidator-Lite
+
+Package: libformvalidator-lite-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ libcgi-pm-perl | perl-modules,
+ libclass-accessor-lite-perl (>= 0.05),
+ libclass-load-perl (>= 0.11),
+ libemail-valid-loose-perl,
+ libemail-valid-perl
+Description: lightweight form validation library
+ FormValidator::Lite is a simple, fast implementation for form validation.
+ .
+ IT'S IN BETA QUALITY. API MAY CHANGE IN THE FUTURE.
+ .
+ This description was automagically extracted from the module by dh-make-perl.
